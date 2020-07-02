@@ -4,21 +4,24 @@
 + 能够通过索引访问
 
 #### 代码模板
-~~~ js
-let left = 0
-let right = 0
-let len = arr.length
-while(left <= right){
-  mid = (right + left) / 2
-  if(arr[mid] === target){
-    // find the target
-    // break or return result
-  }
-  else if(mid < target){
-    left = mid + 1
-  }
-  else{
-    right = mid - 1
-  }
+~~~ go
+func binarySearch(arr[]int,target int) int{
+	if(arr == nil || len(arr) == 0){
+		return -1
+	}
+	left := 0
+	right := len(arr) - 1
+	for left<=right{
+		mid := left + (right - left)/2
+		//fmt.Println(mid)
+		if arr[mid] > target{
+			right = mid-1
+		}else if arr[mid] < target{
+			left = mid +1
+		}else if arr[mid] == target{
+			return mid
+		}
+	}
+	return -1
 }
 ~~~
