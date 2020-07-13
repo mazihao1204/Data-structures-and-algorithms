@@ -12,7 +12,7 @@
 
 [leecode011 Container With Most Water](/src/array/盛水最多的容器.md)
 
-[leetcode21 Merge Two Sorted List](/src/array/lc21.md)
+[leetcode21 Merge Two Sorted List](/src/剑指offer/lc21.md)
 
 [leetcode206 reverseList](/src/Linkedlist/reverseLinkedList.md)
 
