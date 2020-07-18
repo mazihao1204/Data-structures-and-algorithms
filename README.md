@@ -6,6 +6,16 @@
 
 [分治算法](/src/algorithms/分治.md)
 
+#### 剑指offer
+
+----
+
+[数组中重复的数字](/src/剑指offer/数组中重复的数字.md)
+
+[二维数组的查找](/src/剑指offer/二维数组的查找.md)
+
+[替换空格](/src/剑指offer/替换空格.md)
+
 
 #### leetcode 刷题记录
 
