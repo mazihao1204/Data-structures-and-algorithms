@@ -6,6 +6,8 @@
 
 [分治算法](/src/algorithms/分治.md)
 
+[LRU缓存](/src/algorithms/LRU缓存.md)
+
 #### 剑指offer
 
 ----
