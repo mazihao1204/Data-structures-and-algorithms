@@ -10,7 +10,6 @@ struct ListNode
 
 class Solution{
   public:
-
   //反转链表
     ListNode* reverseList(ListNode* head){
       ListNode* curr = head,*prev = NULL;
