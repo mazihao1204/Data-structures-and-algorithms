@@ -42,7 +42,40 @@ public:
       }
       int averLength = size/k;
       int remainder = size%k;
-      vector<ListNode*> res(k,nullptr);
-      
+      vector<ListNode*> res(k,nullptr);     
+    }
+
+
+    //删除链表中的重复节点
+    ListNode* deleDuplicates(ListNode* head){
+      ListNode* curr = head;
+      while(curr != nullptr && curr->next != nullptr){
+        if(curr->val == curr->next->val){
+          curr->next = curr->next->next;
+        }else{
+          curr = curr->next;
+        }     
+      }
+      return head;
+    }
+
+    //删除链表中的重复节点，只保留无重复节点
+    ListNode* deleDuplicates1(ListNode* head){
+      ListNode* p = new ListNode(INT32_MAX);
+      p->next = head;
+      ListNode* prev = p;
+      while(head&&head->next){
+        if(head->val != head->next->val){
+          head = head->next;
+          prev = prev->next;
+        }else{
+          while(head&&head->next&&head->val == head->next->val){
+            head = head->next;
+          }
+          prev->next = head->next;
+          head = head->next;
+        }
+      }
+      return p->next;
     }
 };
